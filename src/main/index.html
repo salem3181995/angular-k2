@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<html lang="en" ng-app="myApp" class="no-js lt-ie9"> <![endif]-->
+<html lang="en" ng-app="myApp" class="no-js"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>My AngularJS App</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- include: "type": "css", "files": "assets/css/*.css" -->
+
+  
+    <!-- /include -->
+
+    <!-- bower:css -->
+    <!-- endbower -->
+
+    <!-- bower:js -->
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-loader/angular-loader.js"></script>
+    <script src="bower_components/angular-mocks/angular-mocks.js"></script>
+    <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+    <!-- endbower -->
+
+    <!-- include: "type": "js", "files": "script/**/*.js" -->
+    <script src="script/app.js"></script>
+    <script src="script/home/home.style.js"></script>
+    <script src="script/product/product.style.js"></script>
+    <!-- /include -->
+</head>
+<body>
+<a ui-sref="home">Home</a>
+<a ui-sref="product">Product</a>
+<div ui-view="navbar"></div>
+<div ui-view="content"></div>
+<div ui-view="footer"></div>
+
+</body>
+</html>
