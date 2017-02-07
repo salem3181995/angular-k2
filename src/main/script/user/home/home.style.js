@@ -12,7 +12,8 @@ angular.module('myApp')
                 url: '/home',
                 views:{
                     'content@':{
-                        templateUrl:'script/home/home.html'
+                        templateUrl:'script/home/home.html',
+                        controller:'HomeController'
                     }
                 }
 
